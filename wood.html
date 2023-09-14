@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    /*nav*/
+    .navbar{
+        background-color:rgb(227, 88, 7);
+        border-radius:20px;
+    }
+    .furniture-logo{
+        height:70px;
+        width:80px;
+    }
+    #navItem1 {
+    color:#fff;
+    font-family: "Roboto";
+    }
+    #navItem2 {
+    color: #fff;
+    font-family: "Roboto";
+    }
+
+    #navItem3 {
+    color: #fff;
+    font-family: "Roboto";
+    }
+
+    #navItem4 {
+    color: #fff;
+    font-family: "Roboto";
+    }
+    
+    #navItem5 {
+    color: #fff;
+    font-family: "Roboto";
+    }
+    
+    #navItem6 {
+    color: #fff;
+    font-family: "Roboto";
+    }
+    
+    #navItem7 {
+    color: #fff;
+    font-family: "Roboto";
+    }
+    .nav-link{
+    font-size: 18px;
+    }
+     /* carousel*/
+     .carousel-inner{
+        margin-top: 150px;
+    }
+    .d-block{
+        height:400px;
+    }
+    /*Abou us section*/
+    .about{
+        height: 300px;
+        width:450px;
+    }
+    .furniture-work-section  {
+    background-color: #f4f5f7;
+    }
+
+    .furniture-work-section-heading {
+        color: #183b56;
+        font-family: "Roboto";
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+    .furniture-work-section-description {
+        color: #5a7184;
+        font-family: "Roboto";
+        font-size: 16px;
+    }
+    h1{
+        text-align: center;
+    }
+    h1:hover{
+        color: #480bcb;
+    }
+   .custom-button {
+    color: white;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+   }
+   h2{
+    font-size: 20px;
+    color:#480bcb;
+    margin-top: 20px;
+   }
+   p{
+    font-size:16px;
+   }
+  /* services*/
+  .services-section {
+    background-color: #f9fbfe;
+}
+
+.services-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.services-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.services-card {
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.services-card-image {
+    width: 300px;
+    height: 200px;
+}
+
+.services-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.services-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+/* gallery*/
+.Gallery-section {
+    background-color: white;
+}
+
+.Gallery-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Galleryu-item-image {
+    border-radius: 16px;
+}
+
+.Gallery-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.Gallery-item-link {
+    color: #eddb12;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Gallery-item-card {
+    border-radius: 16px;
+}
+/* Blog section*/
+.e-block{
+    height: 150px;
+    margin-left: 45%;
+    margin-top: 50px;
+    border-radius: 50%;    
+}
+.carousel-inner-1{
+    height: 400px;
+    background-color:purple;
+}
+/* contact us section*/
+.map{
+    height:300px;
+    width:500px;
+}
+h3{
+    color:#480bcb;
+}
+h4{
+   color:white;
+}
+h5{
+    color:#480bcb;  
+}
+/*footer section*/
+.site-footer
+{
+  background-color:#2d0ce5;
+  margin-top:50px;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#fff;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#5c5050;
+}
+.site-footer a:hover
+{
+  color:#0c54e3;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#fff;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#f4aa0a;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#fff;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.mar{
+    color:purple;
+    font-size: 30px;
+    font-weight: bold;
+}
+</style>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+        <div class="container">
+            <img src="data:image/jpeg;base64,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" class="furniture-logo" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#Home" id="navItem1">Home</a>
+                    <a class="nav-link active" href="#About" id="navItem2">About</a>
+                    <a class="nav-link active" href="#Services" id="navItem3">Services</a>
+                    <a class="nav-link active" href="#Gallery" id="navItem4">Gallery</a>
+                    <a class="nav-link active" href="#Contact Us" id="navItem6">Contact Us</a>
+                    <a class="nav-link active" href="#Blog" id="navItem7">Blog</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner"id="Home">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://media.royaloakindia.com/media/wysiwyg/landingPage/festive-sale_1_.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.royaloakindia.com/media/wysiwyg/landingPage/Banner-3.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://media.royaloakindia.com/media/wysiwyg/landingPage/Banner-5.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <marquee direction="left"class=mar scrollamount="10px;">Maha Sale Started</marquee>
+   <!--carousal-->
+   <!--About Us-->
+   <div class="furniture-work-section pt-5 pb-5" id="About">
+    <div class="container">
+        <h1>India's Finest Online Furniture Brand</h1>
+        <p class="text-center">Buy Furniture Online from our extensive collection of wooden furniture units to give your home an elegant touch at affordable prices. We offer a wide range of wooden furniture online to suit your home interiors.
+            </p>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <div class="text-center">
+                    <a href="">
+                    <img  class="about" src="https://img.freepik.com/free-photo/carpenter-working-woodworking_23-2148643222.jpg?size=626&ext=jpg&ga=GA1.2.18271879.1692798127&semt=ais" /></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+                <h2 class="furniture-work-section-heading">
+                    Impressive Collection For Your Dream Home
+                </h2>
+                <p class="furniture-work-section-description">
+                   There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                </p>
+                <button class="custom-button">Watch Video</button>
+            </div>
+        </div>
+        <h2>Our Mission</h2>
+        <p>Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+        <h2>Our Vision</h2>
+        <p>Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+    </div>
+</div>
+   <!--services-->
+   <div class="services-section pt-5 pb-5" id="Services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="services-sectionn-heading">Shop By Category</h1>
+                <p class="services-section-description">
+                    Our vision in to be the first choice partner of customers aspiring
+                    for Value for Style home interior solutions.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="services-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/b/fbibqbswstwn69155d_1.jpg?width=336&height=340&canvas=336,340&quality=80&bg-color=255,255,255&fit=bounds" class="services-card-image" />
+                    <h1 class="services-card-title mt-3">Bedroom Collection</h1>
+                    <p class="services-card-description">
+                        Stylish and unique design. The table is sturdy and functional.
+                        A great buy for those who love a bohemian vibe. Adds character
+                        to my space.t takes the perfect environment to achieve a perfect 
+                        night's sleep. That's why we have a range of furniture pieces to
+                        deliver just that. Our beds are made for tranquil relaxation, while 
+                        our nightstands ensure that nothing is further than an arm's reach. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="services-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/o/foocsdpbmtwn71470d_1.jpg?width=336&height=340&canvas=336,340&quality=80&bg-color=255,255,255&fit=bounds" class="services-card-image" />
+                    <h1 class="services-card-title mt-3">Wardrobe Collection</h1>
+                    <p class="services-card-description">
+                        Store away your clothes in style with our premium wardrobes.
+                        Each individual piece comes crafted from the finest wood to 
+                        make storage both convenient and stylish. With built-in mirrors, 
+                        drawers and even sliding doors, our wardrobes are a fashionista's 
+                        dream come true. Scroll down to explore our two-door, three-door, 
+                        four-door, five-door, six-door, and seven-door wardrobes.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="services-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/mageplaza/blog/post/9/-/9-ways-main.jpg" class="services-card-image" />
+                    <h1 class="services-card-title mt-3">Living Room</h1>
+                    <p class="services-card-description">
+                        A family room is an informal, all-purpose room in the house. 
+                        It is the perfect place for the family to gather for group
+                        recreation like talking, reading, watching TV, and other family 
+                        activities. Bookshelves, TV tables, baskets, and bins can add 
+                        some beauty to your family room while still providing some practical 
+                        storage solutions. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="services-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/wysiwyg/popular-category/Web-site-Banner-17-04-2023.jpg" class="services-card-image" />
+                    <h1 class="services-card-title mt-3">Dining Collection</h1>
+                    <p class="services-card-description">
+                        The table comes with four matching chairs, each offering comfort 
+                        and support during meals. The chairs' sleek design ensures they fit 
+                        perfectly around the table, allowing for a cohesive and stylish look.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="services-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/l/flil3sfbmtgy71719d_1.jpg?width=336&height=340&canvas=336,340&quality=80&bg-color=255,255,255&fit=bounds" class="services-card-image" />
+                    <h1 class="services-card-title mt-3">Living Room Collection</h1>
+                    <p class="services-card-description">
+                        Sofa color is bold and inviting, and the velvet upholstery 
+                        feels incredibly luxurious. I'm absolutely thrilled with 
+                        this purchase and the statement it makes in my living room.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="services-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/l/flil1ralmtbr11671m_1.jpg?width=336&height=340&canvas=336,340&quality=80&bg-color=255,255,255&fit=bounds" class="services-card-image" />
+                    <h1 class="services-card-title mt-3">Living Room Collections</h1>
+                    <p class="services-card-description">
+                        The Adoree Lounge Chair not only enhances the aesthetics
+                        of my living room but also provides an unparalleled level 
+                        of comfort. The quality of materials used is exceptional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!--gallery-->
+   <div class="Gallery-section pt-5 pb-5" id="Gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="Gallery-section-heading">Our Popular Collections</h1>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow Gallery-item-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/o/fooclcfbmtpk12702m_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Gallery-item-image w-100" />
+                    <h1 class="Gallery-card-title">Adona Velvet Fabric Accent Chair In Yellow</h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow Gallery-item-card p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/b/fbmtqmfbmtna71685d_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Gallery-item-image w-100" />
+                    <h1 class="Gallery-card-title">Evok Dual Comfort Queen Size Mattress </h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="Gallery-item-card shadow p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/o/foocbkswstwn70829d_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Gallery-item-image w-100" />
+                    <h1 class="Gallery-card-title">Saylor Solidwood Book Shelf In Walnut Color (Small)</h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="Gallery shadow p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/l/flileupbmtwt71085d_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Gallery-item-image w-100" />
+                    <h1 class="Gallery-card-title">Ximena Engineerwood Entertainment Unit in White.</h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="Gallery-item-card shadow p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/o/foocwsmlmtbl68335i_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Gallery-item-image w-100" />
+                    <h1 class="Gallery-card-title">Kacia Engineerwood Wall Shelf-Black</h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="Gallery-item-card shadow p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/l/flilctswmtwn11869m_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Galleryu-item-image w-100" />
+                    <h1 class="Gallery-card-title">Arlo Solidwood Coffee Table With 4 Stool-Walnut</h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="Gallery-item-card shadow p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/b/fbibwdpbmtwn71543d_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Gallery-item-image w-100" />
+                    <h1 class="Gallery-card-title">Olive Engineerwood 7 Door With 3 Drawer Wardrobe</h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="Gallery-item-card shadow p-3 mb-3">
+                    <img src="https://www.evok.in/media/catalog/product/f/d/fddsdsswstwn70866d_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=340&width=336&canvas=336:340&dpr=2" class="Gallery-item-image w-100" />
+                    <h1 class="Gallery-card-title">Cyrus Solidwood Dining Set 1+4 In Honey Color</h1>
+                    <a href="" class="Gallery-item-link">
+                        View All
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Blog us section start-->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" id="Blog">
+    <div class="carousel-inner-1">
+      <div class="carousel-item active">
+      <img class="e-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjO42nkg5RWeA6roUeQEf1TcSykrEBsMt3rw&usqp=CAU" alt="First slide">
+      <p class="text-center"style="color:white;">Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+        making this the first true generator on the Internet.</p>
+    <h4 class="text-center">Lorem Ipsum</h4> 
+    </div>
+      <div class="carousel-item">
+        <img class="e-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjO42nkg5RWeA6roUeQEf1TcSykrEBsMt3rw&usqp=CAU" alt="Second slide">
+        <p class="text-center"style="color:white;">Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+            making this the first true generator on the Internet.</p>
+        <h4 class="text-center">Lorem Ipsum</h4>  
+    </div>
+      <div class="carousel-item"style="color:white;">
+        <img class="e-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjO42nkg5RWeA6roUeQEf1TcSykrEBsMt3rw&usqp=CAU" alt="Third slide">
+        <p class="text-center">Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+            making this the first true generator on the Internet.</p>
+        <h4 class="text-center">Lorem Ipsum</h4>  
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--contact us section-->
+  <div class="furniture-work-section pt-5 pb-5" id="Contact Us">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="text-center">We Love Pretty Much To Here From You
+            </p>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3>
+                    Our Address
+                </h3></br>
+                <h5><bold>Your Company Name :</bold></h5>
+                <h6>Your Company Name, Plot No## Navi Mumbai,</br>
+                    Maharashtra 400705 (INDIA)</h6></br>
+                    <h5><bold>Contact Details:</bold></h5>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    <span>+91 91392 12345</span> 
+                </p>
+                <i class="fa fa-envelope"></i>
+                <span>Kpwoodworks@gmail.com</span>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="text-center">
+                    <a href="">
+                    <img  class="map" src="https://www.worldatlas.com/r/w1200/upload/ce/81/b5/artboard-1.png" /></a>
+                </div>
+            </div>
+        </div>
+    <!-- Site footer -->
+    <footer class="site-footer"id="Blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">Furniture </a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">Sofas & Seating</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">Home Decor</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Kitchen & Dining</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Lamps & Lighting</a></li>
+                <li><a href="http://scanfcode.com/category/templates/">Modular</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by  
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+</body>
+</html>
